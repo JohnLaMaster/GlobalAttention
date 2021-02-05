@@ -1,5 +1,4 @@
 import torch.nn as nn
-from modules.aux.auxiliary import is_leaf
 from collections import OrderedDict
 
 
