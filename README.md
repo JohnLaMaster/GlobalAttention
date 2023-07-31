@@ -1,2 +1,2 @@
 # nn.GlobalAttention
-Pytorch module for implementing global attention as described in my new paper
+Pytorch module for implementing global attention. The original paper implemented this in such a way that the batch size used during training was fixed and permanent, even during testing and deployment. This implementation does not stack the inputs before the attention module and instead lets the module the learn the mask in a batch setting just like every other convolution in the network.
